@@ -17,11 +17,11 @@ To ensure high-quality, consistent data, all photographs should be taken in the 
 ### Preparing Photographs for CataractQuantifier
 Import all photographs as .png files to a computer, and place them in the same folder. Make a copy of each image with .shaded appended to the end of the filename. The file structure should be as follows, where you can include as many photos as you want in photo_folder:
 
-cataract_quantifier_[mac/windows].py
-photo_folder>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo1.png
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo1.shaded.png
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo2.png
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo2.shaded.png
+cataract_quantifier_[mac/windows].py  
+photo_folder>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo1.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo1.shaded.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo2.png  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo2.shaded.png  
 
-The next step is to edit each of the photo.shaded.png files to show CataractQuantifier where the lens and sclera are. [This file is being actively edited.]
+The next step is to edit each of the photo.shaded.png files to show CataractQuantifier where the lens and sclera are. [This documentation is being actively edited.]
