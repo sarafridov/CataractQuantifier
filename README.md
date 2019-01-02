@@ -2,7 +2,7 @@
 Quantify the severity and extent of the cataract in a photo of a rat eye.
 
 ### Preliminaries
-CataractQuantifier provides (nearly identical) versions for Mac and Windows machines. Below is documentation for using CataractQuantifier in either context.
+CataractQuantifier provides (nearly identical) versions for Mac and Windows machines (disclaimer: the Windows version is untested). Below is documentation for using CataractQuantifier in either context.
 
 CataractQuantifier is in preparation for publication, along with empirical statistical analysis of its consistency in quantifying rat cataracts. This page will be updated upon publication.
 
@@ -24,4 +24,6 @@ photo_folder>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo2.png  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo2.shaded.png  
 
-The next step is to edit each of the photo.shaded.png files to show CataractQuantifier where the lens and sclera are. The relevant portions of an example photo (without a cataract) are illustrated here: ![alt text][images/unshaded_labeled.png].
+The next step is to edit each of the photo.shaded.png files to show CataractQuantifier where the lens and sclera are. The relevant portions of an example photo (without a cataract) are illustrated here: ![alt text](https://raw.githubusercontent.com/sarafridov/CataractQuantifier/images/unshaded_labeled.png).
+
+[This documentation is a work in progress.]

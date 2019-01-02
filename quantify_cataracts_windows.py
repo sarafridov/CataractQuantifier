@@ -19,8 +19,8 @@ import numpy as np
 import matplotlib.image as mpimg
 import cv2
 import sys
-import glob
 import csv
+from pathlib import Path
 
 # Compute average RGB color of an RGB image, ignoring white pixels
 def mean_color(image):
@@ -88,7 +88,10 @@ def fit_ellipse(img):
     area = np.pi * ellipse[1][0] * ellipse[1][1] / 4.0
     return area
 
-filenames = glob.glob(sys.argv[1] + "\*.shaded.png")
+glob_path = Path(str(sys.argv[1]))
+filenames = [str(pp) for pp in glob_path.glob("**/*.shaded.png")]
+
+# filenames = glob.glob(sys.argv[1] + "\*.shaded.png")
 with open(sys.argv[1] + ".csv", "w") as csvfile:
     # Write column headers
     writer = csv.writer(csvfile, delimiter = ",")
