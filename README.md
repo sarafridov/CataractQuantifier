@@ -26,6 +26,33 @@ photo_folder>
 
 The next step is to edit each of the photo.shaded.png files to show CataractQuantifier where the lens and sclera are. The relevant portions of an example photo (without a cataract) are illustrated here:  
 
-![](images/unshaded_labeled.png?raw=true)  
+![](images/unshaded_labeled.png)  
 
-[This documentation is a work in progress.]
+Use your preferred image editor (e.g. Preview for Mac or GIMP for Windows) to add the following shading to each photo.shaded.png file:
+- Red: shade in the cataract if there is one, or the lens if there is no cataract
+- Green: shade in the sclera (the part of the eye surrounding the lens and the iris)
+- Black: mark at least 4 dots or short lines around the border of the eye
+- Blue: mark at least 4 dots or short lines around the border of the cataract, if there is one (otherwise do not use blue)
+Always avoid highlights when shading, and make sure to use the true shades of red, green, black, and blue. 
+
+Here is an example shaded photo with a cataract:  
+![](images/shaded_cataract.png)  
+...and an example shaded photo without a cataract:  
+![](images/shaded_nocataract.png)  
+
+### Run CataractQuantifier
+
+The final step is to run CataractQuantifier on your photos. In the command line, navigate to the directory where cataract_quantifier_[mac/windows].py is saved, and run:
+
+```console
+$ python cataract_quantifier_[mac/windows].py photo_folder
+```
+
+This will produce a file photo_folder.csv in the same directory. This output file contains the results of cataract quantification, including the following values computed for each original input image in photo_folder:
+- Mean lens brightness: an indicator of how opaque the lens is
+- Mean sclera brightness: a baseline
+- Lens/Sclera brightness ratio: our measure of cataract severity
+- Cataract area: the surface area covered by cataract, if there is a cataract
+- Total eye area: the total surface area of the eye, a baseline
+- Cataract/Eye area ratio: our measure of cataract extent
+
