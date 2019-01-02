@@ -1,10 +1,24 @@
 # CataractQuantifier
 Quantify the severity and extent of the cataract in a photo of a rat eye.
 
+[This documentation is in progress.]
+
+### Overview
+A healthy rat eye is transparent, appearing deep red because of the vascularized retina at the back of the eye. A cataract is a clouding of the otherwise transparent lens, causing the affected portion of the lens to appear brighter because it now reflects some light. CataractQuantifier uses this visible indication of cataracts in rats to quantify the severity (degree of opacity) and extent (portion of the eye that is affected) of a rat cataract, based on a digital image of the eye and some user-added annotations.
+
 ### Preliminaries
-CataractQuantifier provides (nearly identical) versions for Mac and Windows machines (disclaimer: the Windows version is untested). Below is documentation for using CataractQuantifier in either context.
+CataractQuantifier provides (nearly identical) versions for Mac and Windows machines (disclaimer: the Windows version is untested). Below is documentation for using CataractQuantifier in either context. 
 
 CataractQuantifier is in preparation for publication, along with empirical statistical analysis of its consistency in quantifying rat cataracts. This page will be updated upon publication.
+
+### Dependencies
+Before running CataractQuantifier, you'll need to install the following Python packages (some of which should be downloaded automatically when you set up Python):
+- numpy
+- matplotlib.image
+- cv2 (opencv)
+- sys
+- csv
+- Path (for Windows) or glob (for Mac)
 
 ### Taking Photographs
 To ensure high-quality, consistent data, all photographs should be taken in the same way. We recommend the following procedure:
@@ -40,7 +54,7 @@ Here is an example shaded photo with a cataract:
 ...and an example shaded photo without a cataract:  
 ![](images/shaded_nocataract.png)  
 
-### Run CataractQuantifier
+### Running CataractQuantifier
 
 The final step is to run CataractQuantifier on your photos. In the command line, navigate to the directory where cataract_quantifier_[mac/windows].py is saved, and run:
 
