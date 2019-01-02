@@ -24,6 +24,6 @@ photo_folder>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo2.png  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;photo2.shaded.png  
 
-The next step is to edit each of the photo.shaded.png files to show CataractQuantifier where the lens and sclera are. The relevant portions of an example photo (without a cataract) are illustrated here: ![alt text](https://raw.githubusercontent.com/sarafridov/CataractQuantifier/images/unshaded_labeled.png).
+The next step is to edit each of the photo.shaded.png files to show CataractQuantifier where the lens and sclera are. The relevant portions of an example photo (without a cataract) are illustrated here: ![alt text](https://raw.githubusercontent.com/sarafridov/CataractQuantifier/tree/master/images/unshaded_labeled.png).
 
 [This documentation is a work in progress.]
