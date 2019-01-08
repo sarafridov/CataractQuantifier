@@ -12,7 +12,7 @@
 # Images need to be RGB color and saved in png format. Alpha channel is not necessary (but doesn't hurt).
 # Author: Sara Fridovich-Keil
 # January 30, 2018
-# Modified February 1, 2018
+# Modified February 1, 2018 and January 1, 2019
 
 
 import numpy as np
@@ -90,8 +90,6 @@ def fit_ellipse(img):
 
 glob_path = Path(str(sys.argv[1]))
 filenames = [str(pp) for pp in glob_path.glob("**/*.shaded.png")]
-
-# filenames = glob.glob(sys.argv[1] + "\*.shaded.png")
 with open(sys.argv[1] + ".csv", "w") as csvfile:
     # Write column headers
     writer = csv.writer(csvfile, delimiter = ",")
