@@ -1,13 +1,11 @@
 # CataractQuantifier
 Quantify the severity and extent of the cataract in a photo of a rat eye.
 
-[This documentation is in progress.]
-
 ### Overview
 A healthy rat eye is transparent, appearing deep red because of the vascularized retina at the back of the eye. A cataract is a clouding of the otherwise transparent lens, causing the affected portion of the lens to appear brighter because it now reflects some light. CataractQuantifier uses this visible indication of cataracts in rats to quantify the severity (degree of opacity) and extent (portion of the eye that is affected) of a rat cataract, based on a digital image of the eye and some user-added annotations.
 
 ### Preliminaries
-CataractQuantifier provides (nearly identical) versions for Mac and Windows machines (disclaimer: the Windows version is untested). Below is documentation for using CataractQuantifier in either context. 
+CataractQuantifier provides (nearly identical) versions for Mac and Windows machines. Below is documentation for using CataractQuantifier in either context. 
 
 CataractQuantifier is in preparation for publication, along with empirical statistical analysis of its consistency in quantifying rat cataracts. This page will be updated upon publication.
 
@@ -63,10 +61,10 @@ $ python cataract_quantifier_[mac/windows].py photo_folder
 ```
 
 This will produce a file photo_folder.csv in the same directory. This output file contains the results of cataract quantification, including the following values computed for each original input image in photo_folder:
-- Mean lens brightness: an indicator of how opaque the lens is
+- Mean lens brightness: an indicator of how opaque the lens is (higher value means more opaque)
 - Mean sclera brightness: a baseline
-- Lens/Sclera brightness ratio: our measure of cataract severity
+- Lens/Sclera brightness ratio: our measure of cataract severity (higher value means more severe cataract, and values &leq; 1 mean no cataract)
 - Cataract area: the surface area covered by cataract, if there is a cataract
 - Total eye area: the total surface area of the eye, a baseline
-- Cataract/Eye area ratio: our measure of cataract extent
+- Cataract/Eye area ratio: our measure of cataract extent (the proportion of the eye surface that is affected by the cataract)
 
