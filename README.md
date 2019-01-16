@@ -27,7 +27,7 @@ To ensure high-quality, consistent data, all photographs should be taken in the 
 - Zoom and focus on the rat's eye, with the same amount of zoom in each photo
 
 ### Preparing Photographs for CataractQuantifier
-Import all photographs as .png files to a computer, and place them in the same folder. Make a copy of each image with .shaded appended to the end of the filename. The file structure should be as follows, where you can include as many photos as you want in photo_folder:
+Import all photographs as .png files to a computer, and place them in the same folder. We recommend cropping each image to contain just the eye using crop_eyes.py, in order to speed up processing. Make a copy of each image with .shaded appended to the end of the filename. The file structure should be as follows, where you can include as many photos as you want in photo_folder:
 
 cataract_quantifier_[mac/windows].py  
 photo_folder>  
