@@ -7,14 +7,14 @@
 # Alpha channel is not necessary (but doesn't hurt).
 # Author: Sara Fridovich-Keil
 # January 10, 2019
-# Modified January 15, 2019
+# Modified January 16, 2019
 
 
 import numpy as np
 import matplotlib.image as mpimg
 import cv2
 import sys
-import glob
+from pathlib import Path
 
 # A Component is a rectangle in an image, designed to enclose reddish regions
 class Component:
@@ -105,7 +105,8 @@ def find_components(gray, min_dist, stride, min_size):
         big_comps.append(component)
     return np.asarray(big_comps)
 
-filenames = glob.glob(sys.argv[1] + "/*")
+glob_path = Path(str(sys.argv[1]))
+filenames = [str(pp) for pp in glob_path.glob("**/?*.*")]    
 for filename in filenames:
     print(filename)
 
